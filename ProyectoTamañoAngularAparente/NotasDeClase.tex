@@ -1,0 +1,89 @@
+\documentclass[a4paper]{article}
+
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{parskip}
+\usepackage[most]{tcolorbox}
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\usepackage{booktabs}
+
+
+
+% cabecera
+\pagestyle{fancy}
+\fancyhead[l]{Introducciòn a la astronomía práctica}
+\fancyhead[c]{Tamaño angular aparente}
+\fancyhead[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{0.2pt} % linea horizontal
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  {\Large Universidad de Antioquia\par}
+  \vspace{2cm}
+  {\huge\bfseries Introducción a la Astronomía Práctica\par}
+  \vspace{0.4cm}
+  {\Large Notas de Clase: Proyecto de Tamaño Angular Aparente\par}
+  \vspace{2.5cm}
+  {\large Autor:\par}
+  \vspace{0.2cm}
+  {\large Daniel Soto Villada\par}
+  {\large Estudiante de Astronomía\par}
+  \vfill
+  {\large \today\par}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+
+\section{Dinámica del Sistema Tierra-Luna}
+
+\subsection{Velocidades Angulares y Rotación}
+
+El movimiento aparente de los astros es una consecuencia de la rotación terrestre y la traslación de los cuerpos celestes. La Tierra completa una revolución de $360^\circ$ en aproximadamente 24 horas, lo que resulta en una \textbf{velocidad angular de rotación de aproximadamente $15^\circ$ por hora} en dirección Este-Oeste. Por su parte, la Luna posee un movimiento de traslación alrededor de la Tierra en sentido antihorario, completando una vuelta con respecto a las estrellas fijas en unos 27.3 días (mes sidéreo). Este movimiento orbital genera una \textbf{velocidad angular de la Luna de aproximadamente $13^\circ$ por día} ($360^\circ / 27 \approx 13^\circ$).
+
+\subsection{Retraso Diario de la Salida Lunar}
+
+Debido a que la Luna se desplaza hacia el Este en su órbita mientras la Tierra rota, el tiempo necesario para que un observador vuelva a encontrar a la Luna en la misma posición relativa es mayor a un día solar común. La combinación del movimiento diurno terrestre ($15^\circ/\text{h}$) y el avance orbital lunar ($13^\circ/\text{día}$) provoca que \textbf{la Luna salga cada día aproximadamente 52 minutos más tarde}. El cálculo se deriva de la relación:
+$$\Delta t = \frac{13^\circ \times 24 \text{ h}}{360^\circ} \approx 0.866 \text{ h} \approx 52 \text{ min}.$$
+
+\section{Las Fases de la Luna}
+
+\subsection{Fundamento Físico y Geométrico}
+
+Las fases lunares son el resultado de la configuración geométrica del sistema Sol-Tierra-Luna. La Luna es un cuerpo opaco que no tiene luz propia y solo refleja la luz solar; por lo tanto, dependiendo de su posición en la órbita, vemos una fracción distinta de su cara iluminada. El ciclo completo de fases se denomina \textbf{mes sinódico} y tiene una duración promedio de \textbf{29.53 días}. Dado que el ciclo se divide en cuatro fases principales, el intervalo de tiempo \textbf{entre cada fase es de aproximadamente 7.4 días}.
+
+\subsection{Descripción de las Fases Principales}
+
+\begin{itemize}
+    \item \textbf{Luna Nueva:} Ocurre cuando la Luna se encuentra en \textbf{conjunción} con el Sol, situándose entre la Tierra y este astro. En esta posición, la cara iluminada es la opuesta a nuestro planeta, por lo que el satélite es invisible.
+    \item \textbf{Cuarto Creciente:} Se alcanza cuando la Luna se ha separado unos $90^\circ$ del Sol hacia el Este. En esta fase, la superficie está iluminada al 50\% para el observador y culmina en el meridiano aproximadamente a las 6:00 p.m..
+    \item \textbf{Luna Llena:} Sucede cuando la Tierra se interpone entre la Luna y el Sol, configuración técnicamente denominada \textbf{oposición}. Existe una separación de $180^\circ$ entre ambos astros, lo que permite que la Luna sea visible durante toda la noche, saliendo al ocaso y ocultándose al amanecer.
+    \item \textbf{Cuarto Menguante:} Ocurre cuando el ángulo Luna-Tierra-Sol vuelve a ser de $90^\circ$ tras haber recorrido tres cuartas partes del mes sinódico. La Luna sale por el horizonte oriental cerca de la medianoche y culmina hacia las 6:00 a.m..
+\end{itemize}
+
+\section{Posición Relativa y Aparente de los Astros}
+
+\subsection{Conjunción y Oposición}
+
+La \textbf{conjunción} es la configuración en la cual la Luna y el Sol tienen la misma longitud eclíptica, apareciendo en la misma dirección desde la Tierra. Por el contrario, la \textbf{oposición} ocurre cuando las longitudes de un cuerpo y el Sol difieren en $180^\circ$.
+
+\subsection{Posición Aparente del Sol}
+
+Desde la perspectiva terrestre, el Sol parece desplazarse diariamente con respecto a las estrellas de fondo debido al movimiento de traslación de la Tierra alrededor de este. La Tierra tarda $365.25$ días en completar una revolución de $360^\circ$, lo que implica que la \textbf{posición aparente del Sol varía aproximadamente $0.98^\circ$ por día} en dirección Oeste-Este. Este desplazamiento es el responsable de que apreciemos diferentes constelaciones a la misma hora a lo largo del año.
+
+
+
+\bibliographystyle{plainurl}
+\bibliography{bibliografia} 
+\end{document}
