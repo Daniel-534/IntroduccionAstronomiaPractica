@@ -10,3 +10,8 @@
 *.log
 *.out
 *.toc
+*.bcf
+*.run.xml
+
+
+~$DatosTiempo.xlsx
