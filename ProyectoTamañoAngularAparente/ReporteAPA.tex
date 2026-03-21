@@ -14,8 +14,8 @@
 
 \title{Estimacion Experimental del Tamano Angular Aparente del Sol}
 \shorttitle{Tamano Angular Solar}
-\author{Daniel Soto Villada}
-\duedate{18 de marzo de 2026}
+\author{Camilo, Jean Lucca, Daniel}
+\duedate{\today}
 \affiliation{Universidad de Antioquia}
 \course{Introduccion a la Astronomia Practica}
 \professor{Docente del curso}
@@ -30,7 +30,7 @@ El tamano angular aparente de un astro puede estimarse a partir de su desplazami
 \begin{equation}
 \theta = \omega t,
 \end{equation}
-donde $\omega$ es la velocidad angular aparente del cielo y $t$ es el tiempo medido durante la observacion. En condiciones ideales, para el Sol se espera un valor aproximado de $\theta_0\approx0.53^\circ$.
+donde $\omega$ es la velocidad angular aparente del cielo y $t$ es el tiempo medido durante la observacion. En condiciones ideales, para el Sol se espera un valor aproximado de $\theta_0\approx0.53^\circ$ \parencite{portilla2009elementos}.
 
 El objetivo de esta practica fue obtener una estimacion experimental de $\theta$, cuantificar su incertidumbre e interpretar la discrepancia con el valor teorico en terminos metodologicos.
 
@@ -49,6 +49,7 @@ Por propagacion lineal de errores para una variable:
 \begin{equation}
 \delta\theta = \left|\frac{\partial \theta}{\partial t}\right|\delta t = \omega\,\delta t = 0.0625^\circ.
 \end{equation}
+Este procedimiento de propagacion se enmarca en el tratamiento clasico de incertidumbres para funciones de una variable medible \parencite{baird1991experimentacion}.
 
 \subsection{Analisis estadistico}
 Se calcularon estadisticos descriptivos (media, mediana, desviacion estandar, error estandar, cuartiles e intervalo de confianza del 95\%). Para la inferencia se aplicaron pruebas de normalidad (Shapiro-Wilk y D'Agostino-Pearson) y una prueba t de una muestra contra el valor teorico de referencia. Tambien se reporto el tamano del efecto (Cohen's d). El procesamiento se realizo con \texttt{NumPy}, \texttt{pandas}, \texttt{SciPy}, \texttt{Matplotlib} y \texttt{Plotly} \parencite{harris2020array, mckinney2010data, virtanen2020scipy, hunter2007matplotlib, plotly2015}.
@@ -81,6 +82,27 @@ Incertidumbre propagada $\delta\theta$ [deg] & 0.0625 \\
 
 Las graficas de serie de tiempo, histograma y valores de $\theta$ con barras de error se generaron en el cuaderno de analisis del proyecto y respaldan visualmente la dispersion observada.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.95\textwidth]{MedicionesDeTiempo_t.png}
+\caption{Serie temporal de las mediciones del tiempo de transito $t$ (min) para las 34 observaciones. Se aprecia variabilidad inter-observacion y presencia de valores altos aislados.}
+\label{fig:serie_t}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.95\textwidth]{DistribucionDe_t.png}
+\caption{Distribucion empirica de $t$ mediante histograma y curva de densidad. La forma asimetrica es consistente con el rechazo de normalidad en las pruebas inferenciales.}
+\label{fig:hist_t}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.95\textwidth]{EstimacionDe_theta.png}
+\caption{Estimaciones individuales de $\theta$ con barra de error instrumental constante ($\pm 0.0625^\circ$) y linea de referencia teorica para el Sol.}
+\label{fig:theta_err}
+\end{figure}
+
 \subsection{Estadistica inferencial}
 Los resultados inferenciales se presentan en la Tabla~\ref{tab:inferencial}.
 
@@ -99,7 +121,7 @@ t-test 1 muestra ($\theta$ vs. $\theta_0=0.53^\circ$) & 5.972 & 0.000001 \\
 \label{tab:inferencial}
 \end{table}
 
-Ambas pruebas de normalidad rechazan normalidad estricta para $t$ al nivel $\alpha=0.05$. Aun asi, la prueba t de una muestra muestra que la media experimental difiere significativamente del valor de referencia teorico. El tamano del efecto fue grande ($d\approx1.024$).
+Ambas pruebas de normalidad rechazan normalidad estricta para $t$ al nivel $\alpha=0.05$. Aun asi, la prueba t de una muestra muestra que la media experimental difiere significativamente del valor de referencia teorico reportado para el Sol \parencite{portilla2009elementos}. El tamano del efecto fue grande ($d\approx1.024$).
 
 \section{Discusion}
 El valor medio estimado $\bar{\theta}=0.821^\circ$ supera el valor solar tipico de referencia ($\sim0.53^\circ$). Esta discrepancia es consistente con la naturaleza del procedimiento: la medicion visual del borde solar y el cronometraje manual introducen sesgos sistematicos y variabilidad adicional. Entre las fuentes de error plausibles estan el tiempo de reaccion del observador, la dificultad de definir el inicio y fin del evento observado, y condiciones atmosfericas locales.
