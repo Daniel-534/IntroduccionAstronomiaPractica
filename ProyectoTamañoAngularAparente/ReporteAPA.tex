@@ -11,14 +11,17 @@
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\usepackage{float}
+
+
 
 \title{Estimación Experimental del Tamaño Angular Aparente del Sol}
 \shorttitle{Tamaño Angular Solar}
-\author{Camilo \and Jean Lucca \and Daniel}
+\author{Camilo, Jean Lucca y Daniel}
 \duedate{\today}
 \affiliation{Universidad de Antioquia}
 \course{Introducción a la Astronomía Práctica}
-\professor{Docente del curso}
+\professor{Daniel Arbelaez Cardona}
 
 \abstract{Se estimó el tamaño angular aparente del Sol mediante observaciones temporales de tránsito, usando la relación $\theta = \omega t$ con $\omega = 15^\circ/\mathrm{h}$. Se analizaron 34 mediciones de tiempo con estadística descriptiva y propagación de incertidumbre. La media observada fue $t=3.283\,\mathrm{min}$, equivalente a $\bar{\theta}=0.821^\circ$. Se obtuvo una incertidumbre instrumental de $\delta t=0.25\,\mathrm{min}$ y una incertidumbre angular propagada de $\delta\theta=0.0625^\circ$. El resultado final se reporta como $\bar{\theta}=(0.821\pm0.063)^\circ$, o en minutos de arco, $(49.24\pm3.75)'$. Se discuten fuentes de sesgo sistemático asociadas a la observación visual y al cronometraje manual.}
 
@@ -59,7 +62,7 @@ Se calcularon estadísticos descriptivos de $t$ (media, mediana, desviación est
 \subsection{Estadística descriptiva}
 La Tabla~\ref{tab:descriptivos} resume los resultados principales.
 
-\begin{table}[h!]
+\begin{table}[H]
 \caption{Resumen de estadística descriptiva y propagación de incertidumbre.}
 \centering
 \begin{tabular}{lr}
@@ -91,23 +94,23 @@ Resultado final en minutos de arco & $(49.24 \pm 3.75)'$ \\
 
 Las gráficas de serie de tiempo, histograma y valores de $\theta$ con barras de error se generaron en el cuaderno de análisis del proyecto y respaldan visualmente la dispersión observada.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{MedicionesDeTiempo_t.png}
+\includegraphics[width=0.8\textwidth]{MedicionesDeTiempo_t.png}
 \caption{Serie temporal de las mediciones del tiempo de tránsito $t$ (min) para las 34 observaciones, con variabilidad entre mediciones y algunos valores altos aislados.}
 \label{fig:serie_t}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{DistribucionDe_t.png}
+\includegraphics[width=0.8\textwidth]{DistribucionDe_t.png}
 \caption{Distribución empírica de $t$ mediante histograma, útil para visualizar la dispersión y el sesgo de las mediciones de tiempo.}
 \label{fig:hist_t}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{EstimacionDe_theta.png}
+\includegraphics[width=0.8\textwidth]{EstimacionDe_theta.png}
 \caption{Estimaciones individuales de $\theta$ con barra de error instrumental constante ($\pm 0.0625^\circ$) y línea horizontal en el promedio muestral.}
 \label{fig:theta_err}
 \end{figure}
