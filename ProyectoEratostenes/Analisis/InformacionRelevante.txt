@@ -1,0 +1,11 @@
+`Datos20260319.dat` contiene los datos de la longitud de la sombra del gnomon del día 19 de marzo del 2026 (un día antes del equinoccio)
+Estos datos se tomaron con un gnomon de $(112\pm 0.1)\text{ cm}$
+Dado que no contabamos con un buen soporte, fue complicado e impreciso sostener la verticalidad del gnomon para cada medida.
+Consideramos un error en la medida de la sombra de $\pm 0.4\text{ cm}$ debido a que el gnomon era grueso, por lo tanto, la sombra proyectaba se extendía, lo cual induce más error en la medida
+
+`Datos20260320.dat` contiene los datos de la longitud de la sombra proyectada por el gnomon con un error de $\pm 0.3 \text{ cm}$
+Estos datos fueron tomados el día 20 de marzo del 2026. En este caso se usó un gnomon diferente al día anterior, con longitud de $102 \pm \text{ cm}$
+En este caso usamos un gnomon con un buen soporte al suelo, lo cual nos dejó más estabilidad en la medida de los datos.
+
+El intervalo de tiempo que existe entre cada medida, cada día, es irregular debido a que estabamos sujetos a las condiciones climáticas, es decir, si alguna nube se atravesaba frente al sol, no obtendríamos sombra.
+
