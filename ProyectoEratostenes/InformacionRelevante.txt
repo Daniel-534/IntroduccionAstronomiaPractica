@@ -1,11 +1,33 @@
-`Datos20260319.dat` contiene los datos de la longitud de la sombra del gnomon del día 19 de marzo del 2026 (un día antes del equinoccio)
-Estos datos se tomaron con un gnomon de $(112\pm 0.1)\text{ cm}$
-Dado que no contabamos con un buen soporte, fue complicado e impreciso sostener la verticalidad del gnomon para cada medida.
+`Datos20260319.dat` contiene los datos de Hora y la longitud de la sombra del gnomon del día 19 de marzo del 2026 (un día antes del equinoccio)
+Estos datos se tomaron con un gnomon de $(102.7\pm 0.1)\text{ cm}$
+Dado que no contabamos con un buen soporte, fue complicado e impreciso sostener la verticalidad del gnomon para cada medida, a pesar de que se usó una plomada.
 Consideramos un error en la medida de la sombra de $\pm 0.4\text{ cm}$ debido a que el gnomon era grueso, por lo tanto, la sombra proyectaba se extendía, lo cual induce más error en la medida
 
-`Datos20260320.dat` contiene los datos de la longitud de la sombra proyectada por el gnomon con un error de $\pm 0.3 \text{ cm}$
-Estos datos fueron tomados el día 20 de marzo del 2026. En este caso se usó un gnomon diferente al día anterior, con longitud de $102 \pm \text{ cm}$
+
+`Datos20260320.dat` contiene los datos de Hora y la longitud de la sombra proyectada por el gnomon con un error de $\pm 0.3 \text{ cm}$
+Estos datos fueron tomados el día 20 de marzo del 2026. En este caso se usó un gnomon diferente al día anterior, con longitud de $(102 \pm 0.1 )\text{ cm}$
 En este caso usamos un gnomon con un buen soporte al suelo, lo cual nos dejó más estabilidad en la medida de los datos.
 
 El intervalo de tiempo que existe entre cada medida, cada día, es irregular debido a que estabamos sujetos a las condiciones climáticas, es decir, si alguna nube se atravesaba frente al sol, no obtendríamos sombra.
+
+Ambos días hicimos el experimento en la plazoleta central de la universidad de antioquia
+
+El día 19 hubieron más medidas debido a que no pasaban nubes constantemente.
+El día 20 hubieron menos medidas porque pasaban muchas nubes, lo cual impedía obtener sombra para medir.
+
+Tomamos apuntes de la hora del sitio web https://time.is/GMT-5
+
+Para medir la longitud de la sombra, pusimos un papel blanco en el piso, sobre él, el gnomon y marcabamos con un lápiz donde estaba la sombra a cierta hora.
+Después, con una cinta métrica, mediamos la distancia entre el origen del gnomon hasta la marca hecha con el lápiz
+
+A las 12:00 la sombra apuntaba al noroeste.
+Cuando se obtuvo la menor longitud de sombra, la sombra apuntaba al norte
+Después de la longitud más corta, la sombra empezó a apuntar al noreste
+
+Coordenadas del lugar desde el cual tomamos las medidas (coordenadas determinadas con el software de google maps)
+Coordenadas: (6.266635147857544, -75.56943630702584)
+
+Explicación de las fotografías.
+MedicionLongitudDeSombra.jpeg -> Captura de datos experimentales: marcando el extremo de la sombra sobre el plano horizontal
+MedicionVerticalidadConPlomada.jpeg -> Verificación de la verticalidad del gnomon mediante el uso de una plomada, garantizando que la vara esté perpendicular al horizonte matemático
 
