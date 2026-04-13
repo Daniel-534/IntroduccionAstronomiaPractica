@@ -1,0 +1,47 @@
+\usepackage[T1]{fontenc}
+\usepackage[hmargin={2.5 cm,2.5cm}, top=2.5cm, marginpar=2.5cm]{geometry}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{float}
+\captionsetup[table]{labelfont={bf}, textfont={it} ,labelformat={default}, labelsep=newline, name={Tabla },justification=raggedright,singlelinecheck=false}
+\captionsetup[figure]{labelfont={bf}, textfont={it} ,labelformat={default}, labelsep=newline, name={Figura }, justification=raggedright,singlelinecheck=false}
+\usepackage{hyperref}
+\hypersetup{colorlinks, linkcolor=blue, urlcolor=blue, citecolor={red}}
+\usepackage{longtable}
+\usepackage{verbatim}
+\usepackage{hhline, colortbl}
+\usepackage{color}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[round]{natbib}
+
+\setlength{\parindent}{1.25cm}
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{1em}
+
+\renewcommand{\labelitemi}{$\bullet $}
+\setlist[itemize]{leftmargin=*}
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+\usepackage{titlesec}
+\titleformat{\section}{\centering\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\itshape\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{\hspace{1.3cm}\theparagraph}{1em}{}
+\titleformat{\subparagraph}[runin]{\itshape\normalsize\bfseries}{\thesubparagraph}{1em}{}
+
+\usepackage{fancyhdr}
+
+\definecolor{verdeUdeA}{rgb}{0.325,0.506,0.208}
+
+\setlength{\headheight}{36pt}
+\addtolength{\topmargin}{-11pt}
+\renewcommand{\headrule}{{\color{verdeUdeA}\rule{\textwidth}{1pt}}}
+\renewcommand{\headrulewidth}{2pt}
+\lhead{\footnotesize\MakeUppercase{\smalltitulo }}\chead{}\rhead{{\color{white}Rufino}\thepage}
+\cfoot{}
