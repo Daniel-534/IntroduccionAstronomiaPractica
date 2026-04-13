@@ -1,7 +1,7 @@
-# Midiendo el planeta: Método de Eratóstenes
+# Proyecto Eratóstenes: Midiendo el Planeta
 
-## Fuentes
+Estimación experimental del radio terrestre utilizando el método clásico de Eratóstenes, aplicado en la Universidad de Antioquia.
 
-* [Eratóstenes](https://www.britannica.com/biography/Eratosthenes)
-* [Ilustración del experimento](https://www.britannica.com/biography/Eratosthenes#/media/1/191064/120440
-)
+## Descripción
+
+Este proyecto reproduce el experimento realizado por Eratóstenes de Cirene en el siglo III a.C., que permitió medir el radio de la Tierra utilizando la sombra proyectada por un gnomon (vara vertical) en dos ubicaciones con diferentes latitudes.
