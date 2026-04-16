@@ -37,3 +37,12 @@ Luego, estos objetos nos sirven para ubicar objetos en el cielo por medio de las
 2.  Mida la distancia angular desde el ecuador celeste hasta el objeto, por su círculo de declinación. Ésta corresponde a la coordenada de declinación ($\delta$).
 3.  El ángulo entre el meridiano local y el círculo de declinación del objeto representa la coordenada de ángulo horario ($H$). ¡Mídalo!.
 4.  (Opcional) La ascensión recta ($\alpha$) es el ángulo medido desde el punto vernal hasta el círculo de declinación del astro. Consulte y estime la ubicación del punto vernal y mida la ascensión recta del objeto.
+
+
+
+
+**Análisis de la Culminación.**  Para un objeto en su punto más alto, determine su declinación o la latitud del lugar usando su altura máxima ($h_{max}$):
+
+* Si culmina al Sur del Cenit: $h_{max} = 90^\circ - \phi + \delta$
+* Si culmina al Norte del Cenit: $h_{max} = 90^\circ + \phi - \delta$
+* Uso del Gnomon: Si utiliza un gnomon de longitud $L$ y mide una sombra $s$ al mediodía solar: $\tan(h_{max}) = L/s$.

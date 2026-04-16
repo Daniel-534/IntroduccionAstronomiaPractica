@@ -1,4 +1,4 @@
-A continuación, presento la base teórica completa y corregida para la **Práctica 4: Círculos Principales y Coordenadas Celestes**, integrando la información de los libros de **Portilla** (*Elementos de astronomía de posición*) y **Karttunen** (*Fundamental Astronomy*). Se ha verificado cuidadosamente el uso de la notación matemática en LaTeX.
+Información de los libros de **Portilla** (*Elementos de astronomía de posición*) y **Karttunen** (*Fundamental Astronomy*).
 
 ---
 
