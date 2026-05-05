@@ -2,3 +2,8 @@
 *.blg
 *.log
 *.out
+# Track these generated files so the document compiles correctly after cloning
+!main.bbl
+!main.toc
+!main.lof
+!main.lot

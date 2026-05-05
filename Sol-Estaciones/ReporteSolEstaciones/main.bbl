@@ -1,0 +1,46 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Carroll and Ostlie}{Carroll and
+  Ostlie}{2017}]{CarrollOstlie2017}
+Carroll, B.~W. and D.~A. Ostlie (2017).
+\newblock {\em An Introduction to Modern Astrophysics\/} (2 ed.).
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[\protect\citeauthoryear{Giorgini, Yeomans, Chamberlin, Chodas,
+  Jacobson, Keesey, Lieske, Ostro, Standish, and Wimberly}{Giorgini
+  et~al.}{1996}]{Giorgini1996}
+Giorgini, J.~D., D.~K. Yeomans, A.~B. Chamberlin, P.~W. Chodas, R.~A. Jacobson,
+  M.~S. Keesey, J.~H. Lieske, S.~J. Ostro, E.~M. Standish, and R.~N. Wimberly
+  (1996).
+\newblock {JPL's On-Line Solar System Data Service}.
+\newblock Bulletin of the American Astronomical Society, 28(3), 1158.
+\newblock Servicio en l\'inea: \url{https://ssd.jpl.nasa.gov/horizons/}.
+
+\bibitem[\protect\citeauthoryear{{Google Maps}}{{Google
+  Maps}}{2026}]{GoogleMaps2026}
+{Google Maps} (2026).
+\newblock Coordenadas geogr\'aficas de las ciudades de estudio.
+\newblock Google Maps.
+\newblock Consultado en mayo de 2026.
+
+\bibitem[\protect\citeauthoryear{{IDEAM}}{{IDEAM}}{2014}]{IDEAM2014}
+{IDEAM} (2014).
+\newblock Atlas climatol\'ogico de colombia.
+\newblock Instituto de Hidrolog\'ia, Meteorolog\'ia y Estudios Ambientales.
+\newblock Consultado en mayo de 2026.
+
+\bibitem[\protect\citeauthoryear{Meeus}{Meeus}{1998}]{Meeus1998}
+Meeus, J. (1998).
+\newblock {\em Astronomical Algorithms\/} (2 ed.).
+\newblock Richmond, VA: Willmann-Bell.
+
+\bibitem[\protect\citeauthoryear{Morris, Tollerud, Sip{\H o}cz, Deil, Douglas,
+  Berlanga~Medina, Vyhmeister, Smith, Littlefair, Price-Whelan, Gee, and
+  Jeschke}{Morris et~al.}{2018}]{Morris2018}
+Morris, B.~M., E.~Tollerud, B.~Sip{\H o}cz, C.~Deil, S.~T. Douglas,
+  J.~Berlanga~Medina, K.~Vyhmeister, T.~R. Smith, S.~Littlefair, A.~M.
+  Price-Whelan, W.~T. Gee, and E.~Jeschke (2018).
+\newblock astroplan: An open source observation planning package in python.
+\newblock {\em The Astronomical Journal\/}~{\em 155\/}(3), 128.
+
+\end{thebibliography}
