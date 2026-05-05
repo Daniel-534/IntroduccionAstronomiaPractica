@@ -569,18 +569,13 @@ FUNCTION {format.jour.vol}
        { "~{\em " * Volume * "}" * }
       if$
     }
-    { volume emphasize.space
-      number empty$
-       {"there's a number but no volume in " cite$ * warning$ }
-       { "(" number * ")" * * }
+    { volume empty$
+      {"no volume for " cite$ * warning$
+       "~(" * number * ")" * }
+      { "~" *
+        volume emphasize.space
+        "(" * number * ")" * * }
       if$
-%%%    { volume empty$
-%%%      {"no volume for " cite$ * warning$
-%%%       "~(" * number * ")" * }
-%%%      { "~" *
-%%%        volume emphasize.space
-%%%        "(" * number * ")" * * }
-%%%      if$
     }
   if$
   pages empty$
