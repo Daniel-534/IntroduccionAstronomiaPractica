@@ -1,10 +1,20 @@
-*.aux
-*.blg
-*.log
-*.out
-# Override parent .gitignore patterns to track these generated files,
-# ensuring the document compiles correctly with a single pdflatex run after cloning
-!main.bbl
-!main.toc
-!main.lof
-!main.lot
+*
+!*/
+!.gitignore
+!*.tex
+!*.ltx
+!*.xtx
+!*.sty
+!*.cls
+!*.bib
+!*.bst
+!*.bbx
+!*.cbx
+!*.cfg
+!*.lua
+!*.tikz
+!*.md
+!*.txt
+!*.yaml
+!*.yml
+!*.json

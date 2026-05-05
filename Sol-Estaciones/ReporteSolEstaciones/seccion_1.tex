@@ -56,7 +56,7 @@ $+23{,}44^\circ$ (solsticio de junio), y es cero en los dos equinoccios:
 
 \begin{table}[H]
   \centering
-  \caption[Eventos solares principales en 2026 y declinación solar]{Fechas aproximadas de los principales eventos solares en 2026 y la
+  \caption{Fechas aproximadas de los principales eventos solares en 2026 y la
            declinación solar correspondiente
            \citep{CarrollOstlie2017, Meeus1998}.}
   \label{tab:eventos}
@@ -124,7 +124,7 @@ cartográficos nacionales correspondientes; las altitudes provienen de la misió
 
 \begin{table}[H]
   \centering
-  \caption[Coordenadas geográficas de las cinco ciudades de estudio]{Coordenadas geográficas de las cinco ciudades de estudio
+  \caption{Coordenadas geográficas de las cinco ciudades de estudio
            \citep{GoogleMaps2026}.}
   \label{tab:ciudades}
   \begin{tabular}{llcccc}
@@ -146,8 +146,9 @@ cartográficos nacionales correspondientes; las altitudes provienen de la misió
 Se utilizó el paquete \texttt{astroplan} \citep{Morris2018}, una librería afiliada a
 \texttt{astropy} que implementa el cálculo riguroso de eventos astronómicos basado en
 datos del IERS y en la corrección de horizonte de $-0{,}833^\circ$.
-Las funciones \texttt{Observer.sun\_rise\_time()} y \texttt{Observer.sun\_set\_time()}
-calculan, para cada fecha, el amanecer previo y el atardecer siguiente al mediodía local.
+Las funciones \texttt{sun\_rise\_time()} y \texttt{sun\_set\_time()},
+del objeto \texttt{Observer}, calculan para cada fecha el amanecer previo
+y el atardecer siguiente al mediodía local.
 
 Los resultados se validaron comparando las horas calculadas con el servicio
 \textit{JPL Horizons} \citep{Giorgini1996} para Helsinki el día del solsticio de junio
@@ -173,7 +174,7 @@ HH:MM, tal como indica la guía de la práctica.
 
 \begin{table}[H]
   \centering
-  \caption[Horas de salida y puesta del Sol en las cinco ciudades durante 2026]{Horas de salida y puesta del Sol (salida -- puesta, hora local) en las cinco
+  \caption{Horas de salida y puesta del Sol (salida -- puesta, hora local) en las cinco
            ciudades de estudio durante 2026.
            Fuente: \texttt{astroplan} \citep{Morris2018}.}
   \label{tab:salida_puesta}
@@ -210,7 +211,7 @@ HH:MM, tal como indica la guía de la práctica.
   \end{tabular}
   }
 \end{table}
-
+\newpage
 La Figura~\ref{fig:salida_puesta} representa la evolución de las horas de salida y
 puesta del Sol a lo largo del año.
 En Helsinki se aprecia la mayor variación: la salida del Sol oscila entre las
@@ -220,21 +221,21 @@ año.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.95\textwidth]{../imagenes/fig1_salida_puesta.png}
+  \includegraphics[width=0.95\textwidth]{imagenes/fig1_salida_puesta.png}
   \caption[Horas de salida y puesta del Sol en las cinco ciudades]{Horas de salida
            (\textit{panel superior}) y puesta (\textit{panel inferior}) del Sol
            en las cinco ciudades a lo largo de 2026.
            Fuente: \texttt{astroplan} \citep{Morris2018}.}
   \label{fig:salida_puesta}
 \end{figure}
-
+\newpage
 \subsection{Duración del día}
 
 La Tabla~\ref{tab:duracion} presenta la duración del día para cada ciudad y fecha.
 
 \begin{table}[H]
   \centering
-  \caption[Duración del día solar en las cinco ciudades durante 2026]{Duración del día solar (horas y minutos de luz) en las cinco ciudades durante
+  \caption{Duración del día solar (horas y minutos de luz) en las cinco ciudades durante
            2026.
            Fuente: \texttt{astroplan} \citep{Morris2018}.}
   \label{tab:duracion}
@@ -277,7 +278,7 @@ año para las cinco ciudades.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.95\textwidth]{../imagenes/fig2_duracion_dia.png}
+  \includegraphics[width=0.95\textwidth]{imagenes/fig2_duracion_dia.png}
   \caption[Duración del día en las cinco ciudades a lo largo de 2026]{Duración del día
            solar en las cinco ciudades a lo largo de 2026.
            Los valores mínimos y máximos de cada ciudad aparecen anotados sobre la
@@ -296,7 +297,7 @@ a mayor altitud, mayor energía por unidad de área.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.95\textwidth]{../imagenes/fig3_altitud_mediodia.png}
+  \includegraphics[width=0.95\textwidth]{imagenes/fig3_altitud_mediodia.png}
   \caption[Altitud solar al mediodía en las cinco ciudades]{Altitud solar al mediodía
            (al cruzar el meridiano local) en las cinco ciudades durante 2026.
            Fuente: \texttt{astroplan} \citep{Morris2018}.}
@@ -311,7 +312,7 @@ anual.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.95\textwidth]{../imagenes/fig4_variabilidad.png}
+  \includegraphics[width=0.95\textwidth]{imagenes/fig4_variabilidad.png}
   \caption[Variabilidad anual de la duración del día]{Variabilidad anual de la duración
            del día solar.
            \textit{Izquierda:} diagrama de caja por ciudad.
@@ -326,7 +327,7 @@ manera compacta el comportamiento antisimétrico entre hemisferios.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.95\textwidth]{../imagenes/fig5_heatmap.png}
+  \includegraphics[width=0.95\textwidth]{imagenes/fig5_heatmap.png}
   \caption[Mapa de calor de la duración del día]{Mapa de calor de la duración del día
            solar para las cinco ciudades (de norte a sur, de arriba a abajo) a lo largo
            de 2026.
