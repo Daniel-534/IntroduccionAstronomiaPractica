@@ -2,7 +2,8 @@
 *.blg
 *.log
 *.out
-# Track these generated files so the document compiles correctly after cloning
+# Override parent .gitignore patterns to track these generated files,
+# ensuring the document compiles correctly with a single pdflatex run after cloning
 !main.bbl
 !main.toc
 !main.lof
