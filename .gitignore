@@ -12,6 +12,8 @@
 *.toc
 *.bcf
 *.run.xml
-
+*.lot
+*.lof
+*.pdf
 
 ~$DatosTiempo.xlsx
